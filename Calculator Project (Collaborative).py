@@ -18,7 +18,11 @@ def multiplication(a, b):
 # Function for Division
 # [Omar]: Implement the division function here
 def division(a, b):
-    pass  # Replace this with the code for division
+     try:
+        result = a / b
+        return result
+    except ZeroDivisionError:
+        return "Erreur : Division par zéro n'est pas possible."
 
 # Function for Modulus
 # [Louai]: Implement the modulus function here
